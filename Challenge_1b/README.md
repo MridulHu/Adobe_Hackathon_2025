@@ -6,28 +6,13 @@ This project processes multiple PDF collections to extract persona-based structu
 
 ## 📁 Project Structure
 
-challenge_1b/
-├── collection_1/
-│ ├── PDFs/
-│ └── challenge_1b_input.json
-├── collection_2/
-│ ├── PDFs/
-│ └── challenge_1b_input.json
-├── process_collection.py
-├── run_all_collections.py
-├── Dockerfile
-├── requirements.txt
-└── README.md
-
-
-
 Each `collection_X` folder should contain:
 - A `PDFs/` directory with the relevant PDFs
 - A `challenge_1b_input.json` file specifying the filtering rules
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. Each `challenge_1b_input.json` contains filtering rules like keywords, personas, or sections.
 2. The script:
@@ -37,9 +22,9 @@ Each `collection_X` folder should contain:
 
 ---
 
-## 🐳 Docker Setup
+## Docker Setup
 
-### 🔨 Build Docker Image
+### Build Docker Image
 
 ```bash
 docker build -t challenge_1b .
