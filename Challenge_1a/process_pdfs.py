@@ -4,7 +4,6 @@ import json
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 
-# Load schema
 with open("schema.json") as f:
     schema = json.load(f)
 
@@ -30,15 +29,14 @@ def extract_headings(doc):
                 spans = line["spans"]
                 if not spans:
                     continue
-                # Choose the largest font size span in the line
                 largest = max(spans, key=lambda x: x["size"])
                 text = largest["text"].strip()
                 size = largest["size"]
                 flags = largest["flags"]
                 if len(text) < 5 or len(text.split()) > 15:
                     continue
-                if size >= 14.0:  # size threshold (tuned by trial)
-                    level = "heading"  # generic level
+                if size >= 14.0:  
+                    level = "heading"  
                     headings.append({
                         "level": level,
                         "text": text,
