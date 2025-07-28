@@ -6,8 +6,8 @@ This repository contains solutions to two challenges from the Adobe India Hackat
 
 Python 3.10 (Slim)
 
-pdfplumber, jsonschema
-spacy (with a <200MB model)
+pdfplumber, jsonschema, 
+spacy (with a <200MB model), 
 Docker
 
 
