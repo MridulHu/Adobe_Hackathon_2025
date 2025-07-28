@@ -59,11 +59,6 @@ This schema defines the structure of the output JSON, including:
 - `jsonschema` for validation
 - `spacy` for NLP (optimized for <200MB models)
 
-## Notes
-
-- Handles large PDFs efficiently by lazy page loading.
-- Robust against edge cases like missing metadata or malformed headings.
-- Requires schema.json to remain unchanged (as per challenge specification).
 
 ## Author
 
